@@ -22,6 +22,7 @@ h1, h2 {
 #logo {
     float: left;
     font-size: 280%;
+    margin-left: 60px;
 }
 
 /* navigation links */
@@ -50,5 +51,34 @@ menu a{
 }
 
 .active {
-border-bottom: 1px solid #black;
+border-bottom: 1px solid black;
+}
+
+/* hero image */
+
+#hero-outher{
+    height: 600px;
+    width: 100%;
+    overflow:hidden; 
+}
+
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background:url() no-repeat center center;
+
+    /* animates zoom effect on loading page */
+    animation-name:hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+/* create the level of zoom for hero image  */
+@keyframes hero-zoom {
+   from{
+    trasform:scale(1.1);
+   }
+   to{
+    trasform:scale(1.1);
+   }
 }
